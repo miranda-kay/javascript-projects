@@ -33,3 +33,13 @@ let daysToTheMoon = hoursToTheMoon / 24;
 
 // Print the results of the trip to the moon below
 console.log(nameOfSpaceShuttle + " will take " + daysToTheMoon + " days to reach the moon. ");
+console.log("Hello");
+let name = "Miranda";
+let age = 28;
+let favoriteFruit = "blueberries";
+const input = require('readline-sync');
+let answer = input.question("Hey there buddy ol pal how's the weather today?");
+//string interpolation example below
+console.log(`Wow! So the weather is ${answer} today? Neat!`);
+//cocatenation example below
+console.log("Wow! So the weather is " + answer + "today? Neat!");
