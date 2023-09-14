@@ -6,6 +6,7 @@ let launchReady = false;
 let fuelLevel = 17000;
 let crewStatus = true;
 let computerStatus = 'green';
+let crewComputersReady = "Crew and computers are cleared";
 
 if (fuelLevel >= 20000) {
    console.log('Fuel level cleared.');
@@ -25,4 +26,10 @@ if (crewStatus && computerStatus === 'green'){
    launchReady = false;
 }
 
-console.log("launchReady = ", launchReady);
+console.log("Crew and computers are cleared = ", crewComputersReady);
+
+if (launchReady === true && crewComputersReady === true) {
+   console.log("10 9 8 7 6 5 4 3 2 1! Liftoff!");
+} else { 
+   console.log("Launch scrubbed!");
+}
