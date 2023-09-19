@@ -1,0 +1,132 @@
+const input = require('readline-sync');
+
+let myString = "Where does the .push() method put things in an array?";
+console.log(myString);
+myString[0] = "w";
+console.log(myString);
+
+myString = "where does the .push() method put things in an array?";
+console.log(myString);
+
+
+let myString = "Where does the .push() method put things in an array?";
+console.log(myString);
+myString = myString.replace("Where", "Who");
+console.log(myString);
+
+let myString = "Where does the .push() method put things in an array?";
+console.log(myString.indexOf("y"));
+
+let myString = "Where does the .push() method put things in an array?";
+console.log(myString.indexOf("Where"));
+
+let myString = "Where does the .push() method put things in an array?";
+console.log(myString.indexOf("o", 8));
+
+let myString = "Where does the .push() method put things in an array?";
+console.log(myString.indexOf("o", (myString.indexOf("o") + 1)));
+
+let myName = input.question("What is your name?").toLowerCase();
+
+if (myName === "drareg") {
+    console.log("Very funny. /s");
+} else {
+    console.log("Good afternoon! :)");
+} 
+
+if (myName.toLowerCase() === "drareg") {
+    console.log("Very funny. /s");
+} else {
+    console.log("Good afternoon! :)");
+} 
+
+let myString = "Banana Cat";
+console.log(myString);
+console.log(myString.trim());
+console.log(myString);
+
+let myString = "Banana Cat";
+
+console.log(myString.slice(1));
+
+let myString = "JavaScript";
+let letterJ = myString.slice(0, 1); // "J"
+let letterS = myString.slice((myString.indexOf("S")), myString.indexOf ("S") + 1); //"S"
+console.log(myString.slice(0, 1) + myString.slice(4, 5));
+console.log(`${letterJ}${letterS}`);
+
+/* J
+    JS */
+
+let myArray = ["Gerard", "Teacher", "Very Tall", 32, false];
+console.log(myArray);
+
+let myArray = ["Gerard", "Teacher", "Very Tall", 32, false];
+console.log(myArray[4]);
+// false
+//length = 6
+
+let myArray = ["Gerard", "Teacher", "Very Tall", 32, false];
+console.log(myArray[2].length);
+//9 = length of item 2
+
+//Boolean = undefined
+
+let myArray = ["Gerard", "Teacher", "Very Tall", 32, false, undefined];
+console.log(myArray.indexOf("Gerard"));
+// Or console.log(myArray[0].indexOf("s"));
+// Would get -1
+// console.log(myArray[myArray.indexOf("Gerard")].indexOf("s"));
+// This would produce -1
+
+let myArray = ["Gerard", "Teacher", "Very Tall", 32, false, undefined];
+console.log(myArray.pop());
+// undefined
+
+let myArray = ["Gerard", "Teacher", "Very Tall", 32, false, undefined];
+console.log(myArray.shift());
+// Gerard
+
+let myArray = ["Gerard", "Teacher", "Very Tall", 32, false, undefined];
+let newArray = [];
+console.log(myArray);
+newArray.unshift(myArray[0]); // Gerard
+newArray.unshift(myArray[1]); // Teacher, Gerard
+newArray.unshift(myArray[2]); // Very Tall, Teacher, Gerard
+newArray.unshift(myArray[3]); // 32, Very Tall, Teacher, Gerard
+newArray.unshift(myArray[4]); // false, 32, Very Tall, Teacher, Gerard
+newArray.unshift(myArray[5]); // undefined, false, 32, Very Tall, Teacher, Gerard
+console.log(newArray);
+
+let arrayOne = ["Gerard", "Teacher", "Very Tall", 32, false ];
+let arrayTwo = ["Banana Cat", "Banana Cat", "Very Yellow", 4, true];
+let animalList = "Banana Cat, Apple Dog, Mango Zebra, Kiwi Kiwi";
+
+let animalArray = animalList.split(",");
+console.log(animalArray);
+
+let animalArray = animalList.split(",");
+let restringedArray = animalArray.join("");
+// If join has banana and cat emojis in quotes, then banana and cat emojis will be between each item in the list
+console.log(restringedArray);
+
+arrayToString = arrayOne.join(", "); // "Gerard, Teacher, Very Tall, 32, false"
+let stringBackToArray = arrayToString.split(", "); // ["Gerard", "Teacher", "Very Tall", "32", "false"]
+
+const input = require ('readline-sync');
+
+let fruit = ["Banana", "Pineapple", "Mango", "Dragonfruit", "Jackfruit" ];
+let greens = ["Carrot leaves", "Green Beans", "Broccoli?", "Brussels Sprouts", "Zucchini" ];
+let pantry = [fruit, greens];
+
+let greensInPantry = pantry[1];
+console.log(pantry[1][2]);
+console.log(greensInPantry[2]);
+console.log(pantry[0][1]);
+// This gets to first index of fruit and then the second position of Pineapple.
+
+let isolatedFruits = pantry [0];
+console.log(isolatedFruits[isolatedFruits.indexOf("Pineapple")]);
+console.log(pantry.indexOf("Pineapple"));
+console.log(pantry[0][pantry[0].indexOf("Pineapple")]);
+
