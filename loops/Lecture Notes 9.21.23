@@ -1,0 +1,99 @@
+const input = ('readline-sync');
+
+for (let i = 0; i < 51; i++) {
+    console.log(i);
+}
+
+console.log(i);
+
+for (let i = 0; i > 51; i++) {
+    console.log(i);
+}
+// in this case, the expression never gets read
+
+for (let i = 0)
+
+let gerard = ["Gerard Darris", "Teacher", "Very Tall", 32, true];
+
+let forLoopedDrareg = [];
+
+for (let i = 0; i < gerard.length; i++) {
+    forLoopedDrareg.unshift(gerard[i]);
+}
+
+console.log(gerard);
+console.log(forLoopedDrareg);
+
+for (let i = 0; i < gerard.length; i++) {
+    console.log('Iteration ${i + 1}: The current state of the new array is:
+
+    ${forLoopedDrareg}
+
+    We will be adding ${gerard[i]} to the new array.');
+
+    forLoopedDrareg.unshift(gerard[i]);
+    console.log('The present state of the new array is:
+    
+    ${forLoopedDrareg}');
+}
+
+console.log(gerard);
+console.log(forLoopedDrareg);
+
+//can do the unshift and trees array, this will have the two lists show their results intermittently, every other.
+
+let whileLoopedDrareg = [];
+
+while (gerard.length > 0) {
+    whileLoopedDrareg.unshift(gerard.shift());
+}
+
+console.log(gerard);
+console.log(whileLoopedDrareg);
+
+//Eventually, you want your while loop to resolve to false and terminate the loop.
+
+const input = ('readline-sync');
+let startingFuelLevel = 0;
+let numAstronauts = 0;
+
+while (startingFuelLevel < 5000 || startingFuelLevel > 30000) {
+    startingFuelLevel = Number(input.question(`Sorry, ${startingFuelLevel} is not a valid fuel level 
+    input. Please enter a fuel level greater than 5000 and less than 30000: `));
+}
+
+console.log("Good job!");
+
+const input('readline-sync');
+leg startingFuelLevel = Number(input.question("Please enter a fuel value greater than 5000 and less
+than 30000: "));
+let numAstronauts = Number (input.question("Please enter a crew size from 1 to a max of 7: "))
+
+while (startingFuelLevel < 5000 || startingFuelLevel > 3000 || isNaN(startingFuelLevel)) {
+    startingFuelLevel = Number(input.question(`Sorry, )) 
+    //not finished
+}
+
+for (let i = 0; i < phraseArray.length; i++) {
+    let vowels = "aeiou";
+    let firstLetter = phraseArray[i][0];
+    let remaining = phraseArray[i].slice(1);
+
+    if (vowels.indexOf(firstLetter.toLowerCase()) >-1) {
+        hrasepayArrayway.push(phraseArray[i] + "-way");
+    } else if (!isNaN(Number(firstLetter))) {
+        hrasepayArrayway.push(phraseArray[i] + "-yay");
+    } else {
+        hrasepayArrayway.push(remaining + firstLetter + "ay");
+    }
+    }
+
+    hrasepay = hrasepayArrayway.join(" ");
+    console.log(`
+    Here's your original phrase:
+    ${phrase}
+
+    Your new phrase is:
+    ${hrasepay}
+    
+    )

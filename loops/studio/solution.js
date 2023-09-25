@@ -2,23 +2,37 @@ const input = require('readline-sync');
 
 // Part A: #1 Populate these arrays
 
-let protein = [];
-let grains = [];
-let veggies = [];
-let beverages = [];
-let desserts = [];
+let protein = ['chicken', 'pork', 'tofu', 'beef', 'fish', 'beans'];
+let grains = ['rice', 'pasta', 'corn', 'potato', 'quinoa', 'crackers'];
+let veggies = ['peas', 'green beans', 'kale', 'edamame', 'broccoli', 'asparagus'];
+let beverages = ['juice', 'milk', 'water', 'soy milk', 'soda', 'tea'];
+let desserts = ['apple', 'banana', 'more kale', 'ice cream', 'chocolate', 'kiwi'];
 
 
 function mealAssembly(protein, grains, veggies, beverages, desserts, numMeals) {
   let pantry = [protein, grains, veggies, beverages, desserts];
   let meals = [];
+  let dinner = [];
   
   /// Part A #2: Write a ``for`` loop inside this function
   /// Code your solution for part A #2 below this comment (and above the return statement) ... ///
 
 
+for (let i = 0; i < numMeals; i++) { 
+  for (let i = 0; i < pantry.length; i++) {
+	let for Loopedmeals = [];
+  forLoopedMeals.unshift(protein[i]);
+  forLoopedMeals.unshift(grains[i]);
+  forLoopedMeals.unshift(veggies[i]);
+  forLoopedMeals.unshift(beverages[i]);
+  forLoopedMeals.unshift(desserts[i]);
+  console.log(meals);
+}
+
   return meals;
 }
+
+forLoopedmeals.unshift(pantry[i]);
 
 
 function askForNumber() {
