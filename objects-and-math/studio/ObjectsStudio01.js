@@ -21,6 +21,9 @@ for (let i = 0; i < idNumbers["o2Used"].length; i++) {
   console.log(output.slice(0, -2));
 }
 
+function buildCrewArray(candidates, selectedIDs) {
+  let selectedCrew = []; 
+}
 
 let idNumbers = [291, 414, 503, 599, 796, 890];
 let mass = [31.8, 90, 19.1, ]
